@@ -11,16 +11,17 @@
 
 */
 
+//determine the game
+#define GAME_ID 41
+
 #include "Arglib.h"
 #include "globals.h"
 #include "menu.h"
 #include "game.h"
+#include "inputs.h"
 #include "player.h"
 #include "elements.h"
 #include "enemies.h"
-
-//determine the game
-#define GAME_ID 41
 
 typedef void (*FunctionPointer) ();
 FunctionPointer mainGameLoop[] = {
@@ -33,6 +34,7 @@ FunctionPointer mainGameLoop[] = {
   stateGamePrepareLevel,
   stateGameNextLevel,
   stateGamePlaying,
+  stateGamePause,
   stateGameOver,
 };
 

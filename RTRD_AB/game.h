@@ -1,36 +1,36 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <Arduino.h>
 #include "globals.h"
-
-byte currentDice;
-byte amountOfDice;
-byte frameDice;
-int slideCounter;
-boolean slideLeft;
-boolean slidingDice;
-boolean goBack;
-boolean showDiceName;
-byte diceMax[] = {5,7,9,13,21};
+#include "inputs.h"
+#include "player.h"
+#include "enemies.h"
+#include "elements.h"
 
 
 void stateGamePrepareLevel()
 {
-  
+  gameState = STATE_GAME_NEXT_LEVEL;
 };
 
 
 void stateGameNextLevel()
 {
-  
+  gameState = STATE_GAME_PLAYING;
 };
 
 
 void stateGamePlaying()
 {
-  
+  checkInputs();
+  drawPlayer();
 };
 
+void stateGamePause()
+{
+  
+};
 
 void stateGameOver()
 {
