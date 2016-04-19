@@ -1,7 +1,7 @@
 #Rayne the Rogue Deluxe
 
 
-Rayne the Rogue Deluxe: http://www.team-arg.org/rtrd-manual.html
+Rayne the Rogue Deluxe: http://www.team-arg.org/rtrd-manual.html  
 Download stable Arduboy versions :  http://www.team-arg.org/rtrd-downloads.html  
 MADE by TEAM a.r.g. : http://www.team-arg.org/more-about.html
 
