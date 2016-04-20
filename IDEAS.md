@@ -5,6 +5,7 @@
 | **SPRITE** | **SIZE** | **FRAMES** | **DIRECTIONS** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
 | **Player** | 16x16 | 4 | 4 | Rayne  |
+| **Enemie** | ? | 4 | 1 | Dragon  |
 
 ## POWER-UP LIST
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
