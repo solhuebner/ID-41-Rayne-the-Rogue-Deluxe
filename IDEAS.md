@@ -11,19 +11,29 @@ collect treasures, avoid dragon attacks, get to door to exit the cave
 | **Player** | 16x16 | 4 | 4 | Rayne  |
 | **Enemy** | ? | 4 | 1 | Dragon  |
 
-## POWER-UP LIST
+## POWER-UP LIST (8)
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
 | **magnet** | 12x12 | 1 | | player attracts all good treasure |
-| **Fire resistance** | 12x12 | 1 | | absorb a fire attack |
-| **Acid resistance** | 12x12 | 1 | | absorb a acid attack |
-| **Invisibility** | 12x12 | 1 | | temporarily can not be seen by the dragons |
-| **Luck** | 12x12 | 1 | | increase odds of finding more valuable treasure |
+| **Fire resistance** | 12x12 | 1 | yes | absorb a fire attack |
+| **Acid resistance** | 12x12 | 1 | yes | absorb a acid attack |
+| **Invisibility** | 12x12 | 1 | yes | temporarily can not be seen by the dragons |
+| **Luck** | 12x12 | 1 | yes | increase odds of finding more valuable treasure |
+| **HP** | 12x12 | 1 | | live longer |
+|  | 12x12 | 1 | |  |
+|  | 12x12 | 1 | |  |
 
-## POWER-DOWN LIST
+## POWER-DOWN LIST (8)
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
-| **slow** | 12x12 | 1 | | player walks slower |
+| **poison** | 12x12 | 1 | ? | player walks slower (1 cave or more ?) |
+| **stones** | 12x12 | 1 | | have no value, no room for treasure |
+| **pit** | 12x12 | 1 | | you take a fall and lose treasure |
+| **thorn** | 12x12 | 1 | yes | when stinged paralyses you for a few secs  |
+|  | 12x12 | 1 | |   |
+|  | 12x12 | 1 | |   |
+| | 12x12 | 1 | |  |
+|  | 12x12 | 1 | |   |
 
 ## TREASURE LIST
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
