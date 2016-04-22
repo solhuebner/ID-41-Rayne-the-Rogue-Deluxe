@@ -15,8 +15,8 @@ Run around the cave and collect the treasures, avoid traps and dragon attacks an
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
 | **magnet** | 12x12 | 1 | | player attracts all good treasure |
-| **Fire resistance** | 12x12 | 1 | yes | absorb a fire damage |
-| **Acid resistance** | 12x12 | 1 | yes | absorb a acid damage |
+| **Fire resistance** | 12x12 | 1 | yes | absorb fire damage |
+| **Cold resistance** | 12x12 | 1 | yes | absorb cold damage |
 | **Invisibility** | 12x12 | 1 | yes | temporarily can not be seen by the dragons |
 | **Luck** | 12x12 | 1 | yes | increase odds of finding valuable treasure in the next cave |
 | **HP** | 12x12 | 1 | | live longer |
@@ -31,7 +31,7 @@ Run around the cave and collect the treasures, avoid traps and dragon attacks an
 | **pit** | 12x12 | 1 | | you take a fall and lose treasure |
 | **cold trap** | 12x12 | 1 | yes | temporarily frozen in place  |
 | **spike trap** | 12x12 | 1 | yes | 1 point of damage |
-| **fire trap** | 12x12 | 1 | yes | fireball shoots in from left sode of screen toward player, does 1 fire damage on hit  |
+| **fire trap** | 12x12 | 1 | yes | fireball shoots in from top of screen toward player, does 1 fire damage on hit  |
 | | 12x12 | 1 | |  |
 |  | 12x12 | 1 | |   |
 
