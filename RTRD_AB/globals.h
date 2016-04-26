@@ -20,6 +20,8 @@
 #define STATE_GAME_PAUSE             9
 #define STATE_GAME_OVER              10
 
+#define STATE_GAME_LOAD_OR_NEW       11
+
 #define GAME_TOP                     0
 #define GAME_BOTTOM                  48
 #define GAME_LEFT                    0

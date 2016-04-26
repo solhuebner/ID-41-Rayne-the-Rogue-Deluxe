@@ -8,7 +8,14 @@ void stateMenuIntro()
 {
   counter++;
   arduboy.drawBitmap(0, 8, TEAMarg, 128, 48, WHITE);
-  if (counter > 180) gameState = STATE_MENU_MAIN;
+  if (counter > 180) gameState = STATE_GAME_LOAD_OR_NEW;
+}
+
+void stateGameLoadOrNew()
+{
+  sprites.drawSelfMasked(30, 32, icons, 0);
+  sprites.drawSelfMasked(66, 32, icons, 1); 
+  if (buttons.justPressed(B_BUTTON)) gameState = STATE_MENU_MAIN;
 }
 
 void stateMenuMain()
