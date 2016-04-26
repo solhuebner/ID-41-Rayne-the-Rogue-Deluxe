@@ -50,10 +50,19 @@ void loadPreviousGame()
   //all code needed for loading from EEPROM
 }
 
+void drawIconSelector(byte x)
+{
+  sprites.drawSelfMasked(x, 12, iconsBorder, 0);
+  for (byte i = 0; i < 3; i++)
+  {
+    sprites.drawSelfMasked(x, 20 +(8*i), iconsBorder, 1);
+  }
+  sprites.drawSelfMasked(x, 44, iconsBorder, 2);
+}
+
 void stateMenuLoadOrNew()
 {
-  arduboy.drawRect(74 - (loadYesNo * 54), 15, 34, 34, WHITE);
-  arduboy.drawRect(73 - (loadYesNo * 54), 14, 36, 36, WHITE);
+  drawIconSelector(71 - (loadYesNo * 54));
   sprites.drawSelfMasked(21, 16, icons, 0);
   sprites.drawSelfMasked(75, 16, icons, 1);
   if (buttons.justPressed(RIGHT_BUTTON)) loadYesNo = false;
@@ -69,11 +78,10 @@ void stateMenuLoadOrNew()
 
 void stateMenuEasyNormalHard()
 {
-  sprites.drawSelfMasked(2, 16, icons, 2);
+  sprites.drawSelfMasked(4, 16, icons, 2);
   sprites.drawSelfMasked(46, 16, icons, 3);
-  sprites.drawSelfMasked(90, 16, icons, 4);
-  arduboy.drawRect(1+((gameLevel-1) * 44), 15, 34, 34, WHITE);
-  arduboy.drawRect(((gameLevel-1) * 44), 14, 36, 36, WHITE);
+  sprites.drawSelfMasked(88, 16, icons, 4);
+  drawIconSelector(((gameLevel - 1) * 42));
   if (buttons.justPressed(RIGHT_BUTTON) && (gameLevel < 3)) gameLevel++;
   if (buttons.justPressed(LEFT_BUTTON) && (gameLevel > 1)) gameLevel--;
   if (buttons.justPressed(B_BUTTON))
