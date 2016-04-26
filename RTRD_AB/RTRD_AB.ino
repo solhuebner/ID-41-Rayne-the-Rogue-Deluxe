@@ -28,15 +28,15 @@ FunctionPointer mainGameLoop[] = {
   stateMenuIntro,
   stateMenuMain,
   stateMenuHelp,
-  stateMenuPlay,
+  stateMenuLoadOrNew,
   stateMenuInfo,
   stateMenuSoundfx,
+  stateMenuEasyNormalHard,
   stateGamePrepareLevel,
   stateGameNextLevel,
   stateGamePlaying,
   stateGamePause,
   stateGameOver,
-  stateGameLoadOrNew,
 };
 
 void setup()
@@ -44,7 +44,9 @@ void setup()
   arduboy.start();
   arduboy.setFrameRate(60);
   gameState = STATE_MENU_INTRO;
-  menuSelection = STATE_MENU_PLAY;
+  menuSelection = STATE_MENU_LOAD_OR_NEW;
+  loadYesNo = false;
+  gameLevel = GAME_LEVEL_EASY;
   if (EEPROM.read(EEPROM_AUDIO_ON_OFF)) soundYesNo = true;
   arduboy.initRandomSeed();
 }

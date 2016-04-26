@@ -29,7 +29,7 @@ void stateGamePlaying()
 
 void stateGamePause()
 {
-  
+  if (buttons.justPressed(A_BUTTON)) gameState = STATE_GAME_PLAYING;
 };
 
 void stateGameOver()
