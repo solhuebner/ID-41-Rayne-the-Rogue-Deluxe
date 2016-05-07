@@ -9,9 +9,9 @@ Run around the cave and collect the treasures, avoid traps and dragon attacks an
 | **SPRITE** | **SIZE** | **FRAMES** | **DIRECTIONS** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
 | **Player** | 16x16 | 4 | 4 | Rayne  |
-| **Enemy** | ? | 4 | 1 | Dragon  |
+| **Young Ice Dragon** | ? | 4 | 1 | Dragon  |
 
-## POWER-UP LIST (8) / ITEMS - activate on contact for a limited time
+## POWER-UP LIST (6) / ITEMS - activate on contact for a limited time
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
 | **magnet** | 12x12 | 1 | | player attracts all good treasure |
@@ -20,10 +20,9 @@ Run around the cave and collect the treasures, avoid traps and dragon attacks an
 | **Invisibility** | 12x12 | 1 | yes | temporarily can not be seen by the dragons |
 | **Luck** | 12x12 | 1 | yes | increase odds of finding valuable treasure in the next cave |
 | **HP** | 12x12 | 1 | | live longer |
-|  | 12x12 | 1 | |  |
-|  | 12x12 | 1 | |  |
 
-## POWER-DOWN LIST (8) / TRAPS - activate on contact
+
+## POWER-DOWN LIST (6) / TRAPS - activate on contact
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
 | **poison trap** | 12x12 | 1 | yes | player walks slower |
@@ -32,8 +31,7 @@ Run around the cave and collect the treasures, avoid traps and dragon attacks an
 | **cold trap** | 12x12 | 1 | yes | temporarily frozen in place  |
 | **spike trap** | 12x12 | 1 | yes | 1 point of damage |
 | **fire trap** | 12x12 | 1 | yes | fireball shoots in from top of screen toward player, does 1 fire damage on hit  |
-| | 12x12 | 1 | |  |
-|  | 12x12 | 1 | |   |
+
 
 ## ABILITIES LIST (4) - permanent boosts to a player - can be purchased between games
 | **SPRITE** | **SIZE** | **FRAMES** | **LEVELS** | **Description** |
@@ -46,21 +44,30 @@ Run around the cave and collect the treasures, avoid traps and dragon attacks an
 ## TREASURE LIST
 | **SPRITE** | **SIZE** | **FRAMES** | **TIMER** | **Description** |
 | ---        | ---      | ---        | ---       | ---             |
-| **coin** | 12x12 | 1 | |  |
-| **chest** | 12x12 | 1 | |  |
-| **candleabra** | 12x12 | 1 | |  |
-| **harp** | 12x12 | 1 | |  |
-| **lamp** | 12x12 | 1 | |  |
-| **diamond** | 12x12 | 1 | |  |
+| **coin** | 12x12 | 1 | | 1gp |
+| **bag** | 12x12 | 1 | | 5gp |
+| **chest** | 12x12 | 1 | | 10gp |
+| **gem** | 12x12 | 1 | | 15gp |
+| **diamond** | 12x12 | 1 | | 25gp |
 
-Dragons - can have 1-3 heads
--Young Ice Dragon 
---shoots ice bolt - fast speed - line - 16x2 - does 1 cold damage
--Young Fire Dragon 
--- shoots fireball - normal speed - ball - 8x8 - does 1 fire damage
--Ice Dragon 
---shoots ice bolt - fast speed - line - 16x2 - does 2 cold damage
--- breathes cone of cold - slow speed - expanding cone, half the screen - freezes player for 1 second
--Fire Dragon 
--- shoots fireball - normal speed - ball - 8x8 - does 1 fire damage
--- breathes cone of fire - slow speed - expanding cone, half the screen - does 2 fire damage
+## Dragons - can have 1-3 heads
+| **Young Ice Dragon** |
+| **shoots ice bolt - fast speed - line - 16x2 - does 1 cold damage** |
+| ---        |
+| **Young Fire Dragon ** |
+| **shoots fireball - normal speed - ball - 8x8 - does 1 fire damage** |
+| ---        |
+| **Ice Dragon ** |
+| **shoots ice bolt - fast speed - line - 16x2 - does 2 cold damage** |
+| **breathes cone of cold - slow speed - expanding cone, half the screen - freezes player for 1 second** |
+| ---        |
+| **ire Dragon ** |
+| **shoots fireball - normal speed - ball - 8x8 - does 1 fire damage** |
+| **breathes cone of fire - slow speed - expanding cone, half the screen - does 2 fire damage** |
+
+## Relics - high value treasures - appear after X cave - 1 per run
+| **harp** | 12x12 | 1 | | 1500gp |
+| **candleabra** | 12x12 | 1 | | 1000gp |
+| **Jade Dagger** | 12x12 | 1 | | 2000gp |
+| **Lightning Shield** | 12x12 | 1 | | 2500gp |
+| **Dragon Egg** | 12x12 | 1 | | 3000gp |
